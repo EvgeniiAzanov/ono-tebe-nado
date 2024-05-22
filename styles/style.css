@@ -1,1 +1,286 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 148px 1fr;
+  grid-template-rows: 105px;
+  margin: 92px auto 96px;
+  width: 1052px;
+}
+
+.point {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.3;
+  text-underline-offset: 3px;
+}
+
+.header .nav {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.header .nav .point-list {
+  display: flex;
+  list-style-type: none;
+  row-gap: 24px;
+  padding-top: 44px;
+  padding-left: 14px;
+}
+
+.nav .point-list .point {
+  padding-left: 13px;
+  text-transform: lowercase;
+}
+
+.nav .point-list .current-point a {
+  text-decoration: none;
+}
+
+.header .nav .point-list .other-point:before {
+  content: "\FFEE";
+  display: inline-block;
+  width: 17px;
+}
+
+.header .logo .logo-img {
+  height: 105px;
+}
+
+.header .contact .point-list {
+  margin-left: 184px;
+  margin-top: 5px;
+}
+
+.contact .point-list .point {
+  list-style-type: none;
+  line-height: 24px;
+}
+
+.cover {
+  height: 757px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url("/images/cover.jpg");
+}
+
+.cover .title {
+  display: grid;
+  width: 1030px;
+  height: auto;
+  padding-top: 165px;
+  margin-left: 50px;
+  margin-right: 20px;
+  row-gap: 10px;
+}
+
+.cover .title .word {
+  display: flex;
+  column-gap: 30px;
+}
+
+.letter {
+  display: inline;
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+}
+
+.word-2 {
+  justify-content: center;
+  margin-right: 40px;
+}
+
+.word-3 {
+  justify-content: end;
+}
+
+.cover-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-top: 125px;
+  margin-bottom: 51px;
+}
+
+.cover-bottom .subline {
+  color: white;
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-left: 78px;
+  word-spacing: 16px;
+}
+
+.cover-bottom .button {
+  border: white 1px solid;
+  border-spacing: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: none;
+  color: white;
+  margin-right: 50px;
+  font-size: 22px;
+  font-weight: normal;
+  padding: 12px 32px 11px 31px;
+}
+
+.lots {
+  margin: 179px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lots-tittle {
+  margin-left: 40px;
+  margin-bottom: 27px;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.lots-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+}
+
+.lot-item {
+  position: relative;
+  height: 100%;
+}
+
+.lot-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.lot-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.lot-item-tittle {
+  z-index: 1;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: white;
+  text-transform: uppercase;
+  margin: 51px 40px 0 40px;
+  line-height: 120%;
+}
+
+.lot-item-subscription {
+  z-index: 1;
+  font-size: 20px;
+  color: white;
+  margin: 0 40px 48px 40px;
+  line-height: 120%;
+}
+
+.more-lots {
+  margin-top: 30px;
+  margin-left: 40px;
+  font-size: 20px;
+  text-transform: lowercase;
+  font-weight: normal;
+}
+
+.about {
+  padding: 146px 24px 0 24px;
+  display: grid;
+  grid-template-columns: 287px 1fr;
+  gap: 72px;
+}
+
+.logo-column {
+  display: grid;
+  grid-template-columns: 1fr 148px 1fr;
+  grid-template-rows: 1fr 114px 1fr;
+  border-radius: 50%;
+  background-color: black;
+  margin-left: 47px;
+  margin-top: 35px;
+  width: 240px;
+  height: 240px;
+}
+
+.logo-img {
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 3;
+}
+
+.about-content {
+  margin-top: 138px;
+}
+
+.about-tittle {
+  margin-bottom: 27px;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.about-subscription {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 24px;
+  margin-top: 100px;
+}
+
+.footer {
+  margin: 180px 50px 88px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer .contact {
+  width: 210px;
+}
+
+.footer .nav .point-list {
+  display: grid;
+  justify-content: space-evenly;
+  justify-items: center; 
+}
+
+.footer .nav .point-list .point {
+  list-style-type: none;
+}
+
+.footer .social-list {
+  display: flex;
+  justify-items: end;
+  justify-content: end; 
+  column-gap: 48px;
+}
+
+.footer .social-list .social-list-item {
+  width: 48px;
+}
