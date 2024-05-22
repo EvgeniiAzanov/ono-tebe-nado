@@ -24,8 +24,8 @@
   display: flex;
   list-style-type: none;
   row-gap: 24px;
-  padding-top: 44px;
   padding-left: 14px;
+  padding-top: 44px;
 }
 
 .nav .point-list .point {
